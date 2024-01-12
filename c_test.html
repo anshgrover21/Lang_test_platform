@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+   
+    <title>German Lang-Test Generator</title>
+</head>
+<body>
+    <nav class="container-fluid">
+        <ul>
+            <li><strong>Lang-Test Platform</strong></li>
+        </ul>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <!-- <li><a href="#about">About</a></li>
+            <li><a href="#contact" role="button">Contact</a></li> -->
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="grid">
+            <section>
+                <hgroup>
+                    <h2>German Lang-Test Challenge</h2>
+                    <h3>Fill in the blanks and test your language skills</h3>
+                </hgroup>
+                <p>Read the text with missing parts and fill in the blanks:</p>
+                <!-- Generated C-Test Text will go here -->
+                <textarea id="ctest-textarea" rows="10" placeholder="Generated C-test text will appear here..."></textarea>
+                
+                <button type="button" id="submit-btn"onclick="submitTest()">Submit Answers</button>
+                
+                <h3>Your Score:</h3>
+                <p id="score">Your score will appear here after submission.</p>
+
+                <h3>Mistakes:</h3>
+                <ul id="mistakes-list"></ul>
+            </section>
+        </div>
+    </main>
+    <footer class="container">
+        <small><a href="#privacy">Privacy Policy</a> • <a href="#terms">Terms of Service</a></small>
+    </footer>
+
+    <script src="backend.js"></script>
+</body>
+</html>
